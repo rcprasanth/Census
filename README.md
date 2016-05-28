@@ -28,3 +28,25 @@ Let's try to study the mode of transport to work across US and few states.
 Search = acs.lookup(endyear = 2011, keyword = "transport", case.sensitive = F)
 
 View(Search@results) #To view search results
+
+Table 'B08006' has means of transportation to work. Let's download this table for various geographies that we framed in step 1.
+
+# Step 3 - Download
+Use acs.fetch() to download data into R
+
+The geo attribute, table number and end year must be passed to acs.fetch() function. 
+
+USStateLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = USState, col.names = 'pretty')
+
+CTLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = CTState, col.names = 'pretty')
+
+CTCountiesLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = CTCounties, col.names = 'pretty')
+
+CTNYCountiesLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = CTMACounties, col.names = 'pretty')
+
+CTPlacesLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = CTPlaces, col.names = 'pretty')
+
+USZipLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = USZip, col.names = 'pretty')
+
+Visualize output
+
