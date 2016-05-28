@@ -33,7 +33,7 @@ Search = acs.lookup(endyear = 2011, keyword = "transport", case.sensitive = F)
 
 View(Search@results) #To view search results
 
-Table 'B08006' has means of transportation to work. Let's download this table for various geographies that we framed in step 1.
+Table 'B08006' has means of transportation to work. Let's download this table for various geographies that we framed in first step.
 
 # Step 3 - Download
 Use acs.fetch() to download data into R
