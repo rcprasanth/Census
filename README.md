@@ -54,3 +54,5 @@ USZipLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = USZip,
 
 # Visualize output
 ![alt tag](https://github.com/rcprasanth/Census/blob/master/Rplot.png)
+
+![alt tag](https://github.com/rcprasanth/Census/blob/master/Bikepercent.png)
