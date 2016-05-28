@@ -14,20 +14,15 @@ library(acs)
 geo.make() lets you choose your geography.
 Examples for geo.make() are as follows
 
-All states in US
-USState = geo.make(state = '*') 
+All states in US.....USState = geo.make(state = '*') 
 
-Connecticut state
-CTState = geo.make(state = 'CT')
+Connecticut state.....CTState = geo.make(state = 'CT')
 
-Connecticut state, counties
-CTCounties = geo.make(state = 'CT', county = '*')
+Connecticut state, counties.....CTCounties = geo.make(state = 'CT', county = '*')
 
-CT state by places(cities)
-CTPlaces = geo.make(state = 'CT', place = '*')
+CT state by places(cities).....CTPlaces = geo.make(state = 'CT', place = '*')
 
-CT ,NY counties
-CTMACounties = geo.make(state = c('CT','NY'), county = '*')
+CT ,NY counties.....CTMACounties = geo.make(state = c('CT','NY'), county = '*')
 
 # Step 2 - Choose the required table
 Census has information in tables. You can look up table names from R using acs.lookup(). In this function, provide end year and keyword for your search.
