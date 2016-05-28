@@ -52,5 +52,5 @@ CTPlacesLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = CTP
 
 USZipLvl = acs.fetch(endyear = 2011, table.number = 'B08006', geography = USZip, col.names = 'pretty')
 
-Visualize output
-
+# Visualize output
+![alt tag](https://github.com/rcprasanth/Census/blob/master/Rplot.png)
